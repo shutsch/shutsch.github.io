@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("../flag-icon.css");
+@import url("flag-icon.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
@@ -18,16 +18,27 @@
 #444
 #aaa
 #44a6c6
+#325862
+#ff8c00
+#ff7000
+#800020
+#659dbd
+*/
+/* color scheme
+#5d5c61 #379683 #7395ae #557a95 #b1a296
 */
 :root {
---headline_font: #325862;
+--headline_font: #5d5c61;
 --body_font: #000;
---hover_font: #325862;
---side_bar_background: #325862;
+--body_background: #fff;
+--hover_font: #557a95;
+--side_bar_background: #557a95;
 --side_bar_font: #fff;
---side_bar_hover: #fff;
+--side_bar_hover: #379683;
 --code_font: #555
 }
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -94,6 +105,74 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+/* grid */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns:  33% 33% 33% ;
+  grid-gap: 1em;
+}
+
+.grid-container > div {
+	background-color: var(--body_background);
+	text-align: center;
+	padding: 10px 0;
+}
+
+.grid-item {
+  position: relative;s
+  width: 100%;
+  /*border: 1px solid black; */
+  display: grid; /* an inner grid */
+}
+
+.grid-item a {
+	color: var(--headline_font);
+	border-bottom-color: transparent;
+/*  grid-row: 1; /* place in first row
+  grid-column: 1;  /* place in first column  */
+}
+
+.grid-item img {
+  object-fit: cover;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/*	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto auto auto auto;
+	  grid-gap: 3px;
+	  background-color: var(--body_background);
+	  padding: 0px;
+	}
+
+	.grid-item {
+	  display: grid;
+		position: relative;
+	  width: 100%;
+	}
+
+
+	.grid-container > div {
+	  background-color: var(--body_background);
+	  text-align: center;
+	  padding: 10px 0;
+	}
+	.grid-item img {
+		max-width: 100%;
+	}
+
+	.grid-container a {
+		color: var(--headline_font);
+		font-size: 24pt;
+		font-weight: 800;
+	} */
+
+
 /* Basic */
 
 	html {
@@ -105,7 +184,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: var(--body_background);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -132,7 +211,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: solid 1px #000;
+		border-bottom: solid 1px var(--headline_font);
 		color: inherit;
 		text-decoration: none;
 	}
@@ -141,6 +220,7 @@ input, select, textarea {
 			border-bottom-color: transparent;
 			color: var(--hover_font) !important;
 		}
+
 
 	strong, b {
 		color: var(--headline_font);
@@ -170,7 +250,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 	}
 
@@ -179,14 +259,25 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
-	h3:hover {
+/*
+	h2:hover {
 		border-bottom-color: transparent;
 		color: var(--hover_font)!important;
 	}
 
+	h3:hover {
+		border-bottom-color: transparent;
+		color: var(--hover_font)!important;
+	}
+*/
 	h4 {
-		font-size: 1.25em;
+		font-size: 1.75em;
 		line-height: 1.5em;
+	}
+
+	h4:hover {
+		border-bottom-color: transparent;
+		color: var(--hover_font)!important;
 	}
 
 	h5 {
@@ -263,6 +354,31 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+
+
+
+
+
+/* icon */
+
+.oricd_icon{
+    width:100px;
+    display:block;
+    height:20px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    padding-left:20px;
+}
+.oricd_icon:before{
+    content: '';
+    background: './images/orcid.svg');
+    background-size:cover;
+        position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-20px;
+}
 
 /* Row */
 
@@ -2229,7 +2345,7 @@ input, select, textarea {
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 8em auto;
+				margin: 0 auto 2.5em auto;
 				width: 8em;
 			}
 
@@ -2317,7 +2433,7 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 2em 0 0em 0;
 		}
 
 		#main > section:first-child {
@@ -2391,7 +2507,7 @@ input, select, textarea {
 		/* Main */
 
 			#main > section > .container {
-				padding: 4em 0 2em 0;
+				padding: 2em 0 0em 0;
 			}
 
 	}
@@ -2800,5 +2916,3 @@ input, select, textarea {
 			.button {
 				padding: 0;
 			}
-
-	}
