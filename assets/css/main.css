@@ -108,14 +108,40 @@ input, select, textarea {
 
 /* grid */
 
-
-.grid-container {
+.grid-container-contact {
   display: grid;
-  grid-template-columns:  33% 33% 33% ;
+	grid-template-rows: fit-content(40%);
+  grid-template-columns:  50% 25% 25% ;
   grid-gap: 1em;
 }
 
-.grid-container > div {
+.grid-container-contact > div {
+	background-color: var(--body_background);
+	text-align: center;
+	padding: 10px 0;
+}
+
+.grid-container-cv {
+  display: grid;
+	grid-template-rows: fit-content(40%);
+  grid-template-columns: 50% 25% 25%  ;
+  grid-gap: 1em;
+}
+
+.grid-container-cv > div {
+	background-color: var(--body_background);
+	text-align: center;
+	padding: 10px 0;
+}
+
+.grid-container-reference {
+  display: grid;
+	grid-template-rows:  fit-content(30%);
+  grid-template-columns:  30% 10% 10% 10% 10% 10% ;
+  grid-gap: 1em;
+}
+
+.grid-container-reference > div {
 	background-color: var(--body_background);
 	text-align: center;
 	padding: 10px 0;
@@ -139,7 +165,7 @@ input, select, textarea {
   object-fit: cover;
   display: block;
   height: auto;
-  width: 100%;
+  width: 40px;
 }
 
 /*	.grid-container {
