@@ -21,7 +21,7 @@
 
 // Font.
 	$font: (
-		family:				('Lato', sans-serif),
+		family:				('Garamond', 'Lobster', sans-serif),
 		family-fixed:		('Source Code Pro', monospace),
 		weight:				400,
 		weight-bold:		700
@@ -39,14 +39,13 @@
 		border2-bg:			#f4f4f4,
 		border3:			#e0e0e0,
 		border3-bg:			#eaeaea,
-
+/*
 		accent1: (
 			bg:				#4acaa8,
 			fg-bold:		#ffffff,
 			fg:				mix(#4acaa8, #ffffff, 25%),
 			fg-light:		mix(#4acaa8, #ffffff, 40%)
 		),
-
 		accent2: (
 			bg:				#989898,
 			fg-bold:		#ffffff,
@@ -61,4 +60,49 @@
 			fg-light:		mix(#4acaa8, #ffffff, 40%),
 			border:			mix(#4acaa8, #ffffff, 90%)
 		)
+*/
+
+		accent1: (
+			bg:			#7395ae,
+			fg-bold:		#ffffff,
+			fg:				#557a95,
+			fg-light:		mix(#557a95, #ffffff, 40%)
+		),
+
+		accent2: (
+			bg:				#989898,
+			fg-bold:		#ffffff,
+			fg:				mix(#989898, #ffffff, 25%),
+			fg-light:		mix(#989898, #ffffff, 40%)
+		),
+
+		header: (
+			bg:			#557a95,
+			fg-bold:		#ffffff,
+			fg:				#7395ae,
+			fg-light:		mix(#7395ae, #ffffff, 80%),
+			border:			mix(#557a95, #ffffff, 90%)
+		)
 	);
+
+
+// Colors.
+/*
+#777
+#ffffff
+#999
+#888
+#777
+#555
+#444
+#aaa
+#44a6c6
+#325862
+#ff8c00
+#ff7000
+#800020
+#659dbd
+*/
+/* color scheme
+#5d5c61 #379683 #7395ae #557a95 #b1a296
+*/

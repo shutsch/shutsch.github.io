@@ -5,13 +5,15 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('fontawesome-all.min.css');
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("flag-icon.css");
+@import url('http://fonts.cdnfonts.com/css/garamond');
 
 /*
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
 
 // Breakpoints.
 
@@ -43,7 +45,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
+		font: _font(family);
 		vertical-align: baseline;
 	}
 
@@ -726,11 +728,11 @@
 		}
 
 		&.avatar {
-			border-radius: 100%;
+			/* border-radius: 100%; */
 			overflow: hidden;
 
 			img {
-				border-radius: 100%;
+				/* border-radius: 100%; */
 				display: block;
 				width: 100%;
 			}
@@ -1178,7 +1180,7 @@
 
 		header {
 			p {
-				color: _palette(header, fg-light);
+				color: _palette(header, fg);
 			}
 		}
 
@@ -1206,7 +1208,7 @@
 			}
 
 			p {
-				color: _palette(header, fg);
+				color: _palette(header, fg-bold);
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
