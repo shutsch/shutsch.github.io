@@ -30,7 +30,7 @@
 // Palette.
 	$palette: (
 		bg:					#fff,
-		fg:					#888,
+		fg:					#555,
 		fg-bold:			#777,
 		fg-light:			#aaa,
 		border:				#f4f4f4,
@@ -77,12 +77,12 @@
 		),
 
 		header: (
-			bg:			#557a95,
-			fg-bold:		#ffffff,
-			fg:				#7395ae,
-			fg-light:		mix(#7395ae, #ffffff, 80%),
-			border:			mix(#557a95, #ffffff, 90%)
-		)
+			bg:			 	#7395ae,
+			fg-bold:	#ffffff,
+			fg:				#557a95,
+			fg-light:	#5e9ede,
+			border:		#7395ae,
+		),
 	);
 
 
@@ -102,7 +102,64 @@
 #ff7000
 #800020
 #659dbd
+'#1f77b4', '#ff7f0e', '#6ce06c', '#d62728', '#b487dd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22',
+              '#17becf'
 */
 /* color scheme
 #5d5c61 #379683 #7395ae #557a95 #b1a296
+*/
+
+/*
+#590059
+#5c005c
+#5e005e
+#610061
+#630063
+#660066
+#5f0078
+#58008c
+#5000a0
+#4900b4
+#4100c8
+#4416cc
+#4931cc
+#4e4ccc
+#5467d1
+#5982d8
+#5e9ede
+#63b9e5
+#69d4ec
+#6ee3f2
+#73e7f9
+#7aebfe
+#8cf0f8
+#9ef4ed
+#b0f8e0
+#c3fdd3
+#d3fdc3
+#e0f8b0
+#edf49e
+#f8f08c
+#feeb79
+#f9e76e
+#f2e362
+#ecd757
+#e5c44c
+#deb141
+#d89d36
+#d18a2b
+#cc761f
+#cc6314
+#cc4f09
+#c94000
+#ba4300
+#ab4500
+#9c4800
+#8d4a00
+#7f4c00
+#7a4700
+#754200
+#703d00
+#6b3800
+
 */

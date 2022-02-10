@@ -40,7 +40,7 @@
 	tfoot, thead, tr, th, td, article, aside,
 	canvas, details, embed, figure, figcaption,
 	footer, header, hgroup, menu, nav, output, ruby,
-	section, summary, time, mark, audio, video {
+	section,  summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -262,7 +262,7 @@
 /* Row */
 
 	.row {
-		@include html-grid(2em);
+		@include html-grid(12em);
 
 		@include breakpoint('<=xlarge') {
 			@include html-grid(2em, 'xlarge');
@@ -291,6 +291,7 @@
 		margin: 0 auto;
 		max-width: calc(100% - #{_size(element-margin) * 2});
 		width: _size(container-width);
+
 
 		&.xsmall {
 			width: (_size(container-width) * 0.25);
@@ -332,6 +333,8 @@
 			text-align: center;
 		}
 	}
+
+
 
 	header {
 		p {
@@ -1289,7 +1292,6 @@
 			> .container {
 				padding: 6em 0 4em 0;
 			}
-
 			&:first-child {
 				border-top: 0;
 			}
@@ -1662,6 +1664,32 @@
 					}
 				}
 			}
+
+			.split {
+				article {
+				height: 100%;
+				width: 50%;
+				position: fixed;
+
+			  &.left {
+				left: 0;
+			}
+
+			/* Control the right side */
+			 &.right {
+				right: 0;
+			}
+
+			/* If you want the content centered horizontally and vertically */
+			&.centered {
+				position: float;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+			}
+		}
+	}
 
 		/* Header */
 

@@ -13,9 +13,65 @@
 #ff7000
 #800020
 #659dbd
+'#1f77b4', '#ff7f0e', '#6ce06c', '#d62728', '#b487dd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22',
+              '#17becf'
 */
 /* color scheme
 #5d5c61 #379683 #7395ae #557a95 #b1a296
+*/
+/*
+#590059
+#5c005c
+#5e005e
+#610061
+#630063
+#660066
+#5f0078
+#58008c
+#5000a0
+#4900b4
+#4100c8
+#4416cc
+#4931cc
+#4e4ccc
+#5467d1
+#5982d8
+#5e9ede
+#63b9e5
+#69d4ec
+#6ee3f2
+#73e7f9
+#7aebfe
+#8cf0f8
+#9ef4ed
+#b0f8e0
+#c3fdd3
+#d3fdc3
+#e0f8b0
+#edf49e
+#f8f08c
+#feeb79
+#f9e76e
+#f2e362
+#ecd757
+#e5c44c
+#deb141
+#d89d36
+#d18a2b
+#cc761f
+#cc6314
+#cc4f09
+#c94000
+#ba4300
+#ab4500
+#9c4800
+#8d4a00
+#7f4c00
+#7a4700
+#754200
+#703d00
+#6b3800
+
 */
 @import url("fontawesome-all.min.css");
 @import url("flag-icon.css");
@@ -115,7 +171,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 body, input, select, textarea {
-  color: #888;
+  color: #555;
   font-family: "Garamond", "Lobster", sans-serif;
   font-size: 16pt;
   font-weight: 400;
@@ -370,68 +426,68 @@ pre code {
 }
 .row.gtr-25 {
   margin-top: 0;
-  margin-left: -0.5em;
+  margin-left: -3em;
 }
 .row.gtr-25 > * {
-  padding: 0 0 0 0.5em;
+  padding: 0 0 0 3em;
 }
 .row.gtr-25.gtr-uniform {
-  margin-top: -0.5em;
+  margin-top: -3em;
 }
 .row.gtr-25.gtr-uniform > * {
-  padding-top: 0.5em;
+  padding-top: 3em;
 }
 .row.gtr-50 {
   margin-top: 0;
-  margin-left: -1em;
+  margin-left: -6em;
 }
 .row.gtr-50 > * {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 6em;
 }
 .row.gtr-50.gtr-uniform {
-  margin-top: -1em;
+  margin-top: -6em;
 }
 .row.gtr-50.gtr-uniform > * {
-  padding-top: 1em;
+  padding-top: 6em;
 }
 .row {
   margin-top: 0;
-  margin-left: -2em;
+  margin-left: -12em;
 }
 .row > * {
-  padding: 0 0 0 2em;
+  padding: 0 0 0 12em;
 }
 .row.gtr-uniform {
-  margin-top: -2em;
+  margin-top: -12em;
 }
 .row.gtr-uniform > * {
-  padding-top: 2em;
+  padding-top: 12em;
 }
 .row.gtr-150 {
   margin-top: 0;
-  margin-left: -3em;
+  margin-left: -18em;
 }
 .row.gtr-150 > * {
-  padding: 0 0 0 3em;
+  padding: 0 0 0 18em;
 }
 .row.gtr-150.gtr-uniform {
-  margin-top: -3em;
+  margin-top: -18em;
 }
 .row.gtr-150.gtr-uniform > * {
-  padding-top: 3em;
+  padding-top: 18em;
 }
 .row.gtr-200 {
   margin-top: 0;
-  margin-left: -4em;
+  margin-left: -24em;
 }
 .row.gtr-200 > * {
-  padding: 0 0 0 4em;
+  padding: 0 0 0 24em;
 }
 .row.gtr-200.gtr-uniform {
-  margin-top: -4em;
+  margin-top: -24em;
 }
 .row.gtr-200.gtr-uniform > * {
-  padding-top: 4em;
+  padding-top: 24em;
 }
 @media screen and (max-width: 1680px) {
   .row {
@@ -1531,7 +1587,7 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
   text-decoration: none;
-  color: #888;
+  color: #555;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -2173,7 +2229,7 @@ input[type=button].disabled,
 input[type=button]:disabled,
 .button.disabled,
 .button:disabled {
-  background-color: #888 !important;
+  background-color: #555 !important;
   box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
   color: #fff !important;
   cursor: default;
@@ -2223,8 +2279,8 @@ input[type=button]:disabled,
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background: #557a95;
-  color: #7395ae;
+  background: #7395ae;
+  color: #557a95;
   height: 100%;
   overflow-y: auto;
   position: fixed;
@@ -2240,10 +2296,10 @@ input[type=button]:disabled,
   color: #ffffff;
 }
 #header header p {
-  color: #7395ae;
+  color: #557a95;
 }
 #header a {
-  color: #7395ae;
+  color: #557a95;
 }
 #header a:hover {
   color: #ffffff !important;
@@ -2283,7 +2339,7 @@ input[type=button]:disabled,
   margin: 0;
 }
 #header > footer .icons li a {
-  color: #8faabe;
+  color: #5e9ede;
 }
 #header > nav {
   -moz-flex-grow: 1;
@@ -2297,7 +2353,7 @@ input[type=button]:disabled,
   padding: 0;
 }
 #header > nav ul li {
-  border-top: solid 2px #6687a0;
+  border-top: solid 2px #7395ae;
   display: block;
   padding: 0;
 }
@@ -2314,7 +2370,7 @@ input[type=button]:disabled,
 }
 #header > nav ul li a.active {
   background: #fff;
-  color: #557a95 !important;
+  color: #7395ae !important;
 }
 #header > nav ul li:first-child {
   border-top: 0;
@@ -2622,6 +2678,27 @@ input[type=button]:disabled,
   .features article .inner {
     display: block;
     width: 100%;
+  }
+
+  .split article {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    /* Control the right side */
+    /* If you want the content centered horizontally and vertically */
+  }
+  .split article.left {
+    left: 0;
+  }
+  .split article.right {
+    right: 0;
+  }
+  .split article.centered {
+    position: float;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
   /* Header */
