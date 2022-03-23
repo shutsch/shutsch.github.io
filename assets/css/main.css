@@ -2061,6 +2061,9 @@ table {
   margin: 0 0 2.25em 0;
   width: 100%;
 }
+table col.second {
+  text-align: right;
+}
 table tbody tr {
   border: solid 2px #f4f4f4;
   border-left: 0;
@@ -2313,7 +2316,7 @@ input[type=button]:disabled,
 }
 #header > header .avatar {
   display: block;
-  margin: 0 auto 2.25em auto;
+  margin: 0 auto 1.6875em auto;
   width: 8em;
 }
 #header > header h1 {
@@ -2714,7 +2717,7 @@ input[type=button]:disabled,
     padding: 2em;
   }
   #header > header .avatar {
-    margin: 0 auto 1.6875em auto;
+    margin: 0 auto 1.125em auto;
     width: 6em;
   }
   #header > header h1 {

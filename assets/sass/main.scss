@@ -954,6 +954,13 @@
 		margin: 0 0 _size(element-margin) 0;
 		width: 100%;
 
+		col {
+			&.second {
+   text-align: right;
+}
+
+		}
+
 		tbody {
 			tr {
 				border: solid _size(border-width) _palette(border);
@@ -1201,7 +1208,7 @@
 
 			.avatar {
 				display: block;
-				margin: 0 auto _size(element-margin) auto;
+				margin: 0 auto _size(element-margin)*0.75 auto;
 				width: 8em;
 			}
 
@@ -1709,7 +1716,7 @@
 					padding: 2em;
 
 					.avatar {
-						margin: 0 auto (_size(element-margin) * 0.75) auto;
+						margin: 0 auto (_size(element-margin) * 0.5) auto;
 						width: 6em;
 					}
 
