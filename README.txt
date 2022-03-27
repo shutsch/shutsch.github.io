@@ -1,3 +1,10 @@
+This is the personal webpage
+All questions and inquiries should be directed to hutsch@astro.ru.nl
+This webpage is based on Read Only by HTML5 UP (html5up.net | @ajlkn).
+
+Below is the original README.
+
+
 Read Only by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
